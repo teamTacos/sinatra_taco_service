@@ -1,0 +1,15 @@
+service:
+  build: .
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  volumes:
+    - .:/code
+db:
+  image: mysql:latest
+  environment:
+    MYSQL_DATABASE: team_tacos
+    MYSQL_ROOT_PASSWORD: my-secret-pw
+  ports:
+    - "3306:3306"
