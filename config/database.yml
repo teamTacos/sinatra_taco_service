@@ -1,18 +1,18 @@
 development:
   adapter: mysql2
   reconnect: false
-  database: <%= ENV['DB_ENV_MYSQL_DATABASE']%>
+  database: taco_service
   pool: 5
   username: root
-  password: <%= ENV['DB_1_ENV_MYSQL_ROOT_PASSWORD']%>
-  host: <%= ENV['DB_1_PORT_3306_TCP_ADDR']%>
+  password: my-secret-pw
+  host: db
 
 
 test:
   adapter: mysql2
   reconnect: false
-  database: <%= ENV['DB_ENV_MYSQL_DATABASE']%>
+  database: taco_service
   pool: 5
   username: root
-  password: <%= ENV['DB_1_ENV_MYSQL_ROOT_PASSWORD']%>
-  host: <%= ENV['DB_1_PORT_3306_TCP_ADDR']%>
+  password: my-secret-pw
+  host: db

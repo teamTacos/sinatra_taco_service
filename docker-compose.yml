@@ -1,10 +1,8 @@
 db:
-  image: mysql:latest
+  image: mysql:5.5
   environment:
-    MYSQL_DATABASE: team_tacos
+    MYSQL_DATABASE: taco_service
     MYSQL_ROOT_PASSWORD: my-secret-pw
-    MYSQL_USER: root
-    MYSQL_PASSWORD: admin123
   ports:
     - "3306:3306"
   volumes:

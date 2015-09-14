@@ -25,7 +25,11 @@ Vagrant.configure(2) do |config|
                       run: 'always',
                       rebuild: true
 
+  #$ sudo apt-get update
+  # sudo apt-get install linux-image-generic-lts-trusty
+  # sudo reboot
   # config.vm.provision 'shell', inline: 'docker-compose run service rake db:create'
   # config.vm.provision 'shell', inline: 'docker-compose run service bundle exec rake db:migrate'
   # config.vm.provision 'shell', inline: 'docker-compose run service bundle exec rake db:migrate'
+  # docker-compose stop && docker-compose rm db && docker-compose up -d
 end
