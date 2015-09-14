@@ -25,6 +25,9 @@ Vagrant.configure(2) do |config|
                       run: 'always',
                       rebuild: true
 
+  # vagrant docker-run service -- rake db:migrate
+  # config.vm.provision 'shell', inline: ''
+
   #$ sudo apt-get update
   # sudo apt-get install linux-image-generic-lts-trusty
   # sudo reboot
