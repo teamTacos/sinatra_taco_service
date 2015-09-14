@@ -3,6 +3,11 @@
 Taco Service for Team Tacos
 
 
+### Deps
+
+* vagrant
+* virtualbox
+
 
 ### Running the containers
 

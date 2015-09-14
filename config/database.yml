@@ -1,17 +1,18 @@
 development:
   adapter: mysql2
-  encoding: utf8
   reconnect: false
-  database: test-team_tacos_dev
+  database: <%= ENV['DB_ENV_MYSQL_DATABASE']%>
   pool: 5
   username: root
-  password:
+  password: <%= ENV['DB_1_ENV_MYSQL_ROOT_PASSWORD']%>
+  host: <%= ENV['DB_1_PORT_3306_TCP_ADDR']%>
+
 
 test:
   adapter: mysql2
-  encoding: utf8
   reconnect: false
-  database: test-team_tacos
+  database: <%= ENV['DB_ENV_MYSQL_DATABASE']%>
   pool: 5
   username: root
-  password:
+  password: <%= ENV['DB_1_ENV_MYSQL_ROOT_PASSWORD']%>
+  host: <%= ENV['DB_1_PORT_3306_TCP_ADDR']%>
